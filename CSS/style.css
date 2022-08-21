@@ -1,0 +1,619 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* 公共类 */
+.w {
+    width: 1200px;
+    margin: auto;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* 整体背景颜色 */
+body {
+    background-color: #f3f5f7;
+}
+
+li {
+    list-style: none;
+}
+
+/* 头部 */
+.header {
+    height: 72px;
+}
+
+/* logo */
+.header .logo {
+    float: left;
+    margin-top: 30px;
+    margin-right: 71px;
+}
+
+/* 导航栏 */
+.header .nav {
+    float: left;
+    height: 40px;
+    margin-top: 30px;
+    margin-right: 74px;
+}
+
+.header .nav li {
+    float: left;
+    margin: 0 12px;
+    font: 18px/40px 'microsoft yahei';
+}
+
+a {
+    text-decoration: none;
+}
+
+.header .nav a {
+    display: inline-block;
+    padding: 0 10px;
+    height: 40px;
+    color: #050505;
+}
+
+.header .nav a:hover {
+    border-bottom: 2px solid #00a4ff;
+}
+
+/* 搜索框+搜索图标 */
+.header .search {
+    float: left;
+    width: 360px;
+    height: 38px;
+    text-indent: 19px;
+    border: 1px solid #00a4ff;
+    border-right: none;
+    background-color: transparent;
+}
+
+input::-webkit-input-placeholder {
+
+    color: #bfbfbf;
+    font-size: 14px;
+}
+
+/* 搜索框 */
+.header .sousuo {
+    float: left;
+    margin-top: 32px;
+}
+
+/* 搜索图标按钮 */
+.header .sousuo button {
+    width: 50px;
+    height: 40px;
+    border: none;
+}
+
+/* 用户 */
+.header .user {
+    float: right;
+    height: 30px;
+    margin-top: 36px;
+    margin-right: 41px;
+}
+
+/* 用户头像 */
+.header .touxiang {
+    float: left;
+    width: 30px;
+    height: 30px;
+    margin-right: 6px;
+}
+
+/* 用户名 */
+.header .username {
+    float: left;
+    line-height: 30px;
+}
+
+/* banner底部背景 */
+.banner_bgc {
+    height: 420px;
+    margin-top: 30px;
+    background-color: #1c036c;
+}
+
+/* banner图片 */
+.banner {
+    width: 1201px;
+    height: 420px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-image: url(../images/banner.png);
+}
+
+/* banner导航栏 */
+.banner .subnav {
+    float: left;
+    width: 190px;
+    height: 420px;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.banner .subnav li {
+    width: 190px;
+    height: 44px;
+    font: 14px/44px 'microsoft yahei';
+    background-image: url(../images/形状3拷贝2.png);
+    background-repeat: no-repeat;
+    background-position: 165px 17px;
+}
+
+.banner .subnav a {
+    float: left;
+    width: 190px;
+    height: 44px;
+    text-indent: 20px;
+    color: #ffffff;
+}
+
+.banner .subnav a:hover {
+    color: #00b4ff;
+    background-image: url(../images/形状3拷贝.png);
+    background-repeat: no-repeat;
+    background-position: 165px 17px;
+}
+
+/* banner图片添加超链接布局 */
+.banner .pro {
+    float: left;
+    width: 781px;
+    height: 420px;
+}
+
+/* 课程表 */
+.banner .shedule {
+    float: right;
+    width: 228px;
+    height: 300px;
+    /* 浮动的盒子不会有外边距合并的问题 */
+    margin-top: 50px;
+    margin-right: 2px;
+    background-color: #ffffff;
+}
+
+.banner .shedule .top {
+    height: 48px;
+    background-color: #9bceea;
+}
+
+/* 课程表顶部文字 */
+.banner .shedule .top .t {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 48px;
+    text-align: center;
+    /* letter-spacing设置文字间距 */
+    letter-spacing: 1px;
+    font-family: 'microsoft yahei';
+}
+
+.banner .shedule .list .one {
+    height: 70px;
+    border-bottom: 2px solid #efefef;
+}
+
+.banner .shedule .list .two {
+    height: 59px;
+    border-bottom: 2px solid #efefef;
+}
+
+.banner .shedule .list .three {
+    height: 62px;
+    border-bottom: 2px solid #efefef;
+}
+
+.banner .shedule .list .p1 {
+    float: left;
+    margin-left: 20px;
+    margin-right: 8px;
+    color: #4e4e4e;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: FZLanTingHeiS-UL-GB;
+}
+
+.banner .shedule .list .p2 {
+    float: left;
+    color: #4e4e4e;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: FZLanTingHeiS-UL-GB;
+}
+
+.banner .shedule .list .p3 {
+    float: left;
+    margin-left: 20px;
+    color: #a5a5a5;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: FZLanTingHeiS-UL-GB;
+}
+
+.banner .shedule .list .one .p1 {
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+.banner .shedule .list .one .p2 {
+    margin-top: 23px;
+    letter-spacing: 1px;
+}
+
+.banner .shedule .list .one .p3 {
+    margin-top: 3px;
+    letter-spacing: 1px;
+}
+
+.banner .shedule .list .two .p1 {
+    margin-top: 14px;
+    letter-spacing: 1px;
+}
+
+.banner .shedule .list .two .p2 {
+    margin-top: 17px;
+    letter-spacing: 1px;
+}
+
+.banner .shedule .list .two .p3 {
+    margin-top: 3px;
+    letter-spacing: 1px;
+}
+
+.banner .shedule .list .three .p1 {
+    margin-top: 16px;
+    letter-spacing: 1px;
+}
+
+.banner .shedule .list .three .p2 {
+    margin-top: 19px;
+    letter-spacing: 1px;
+}
+
+.banner .shedule .list .three .p3 {
+    margin-top: 3px;
+    letter-spacing: 1px;
+}
+
+/* “全部课程”按钮 */
+.banner .shedule .btn {
+    float: left;
+    width: 198px;
+    height: 38px;
+    margin-top: 4px;
+    margin-left: 14px;
+    border: 1px solid #22b0ff;
+}
+
+/* “全部课程”文字布局和样式 */
+.banner .shedule .btn span {
+    display: block;
+    line-height: 38px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    color: #00a4ff;
+}
+
+/* 精品推荐板块 */
+.goods {
+    height: 60px;
+    margin: 8px auto 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 7px -4px rgba(0, 0, 0, .3);
+}
+
+/* 精品推荐文字样式设置 */
+.goods h4 {
+    float: left;
+    padding: 0 34px;
+    color: #00a4ff;
+    line-height: 60px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'microsoft yahei';
+}
+
+/* 竖线样式设置 */
+.goods span {
+    float: left;
+    font-size: 16px;
+    line-height: 60px;
+    color: #bfbfbf;
+}
+
+.goods ul li {
+    float: left;
+    padding: 0 34px;
+    line-height: 60px;
+}
+
+.goods ul li a {
+    color: #050505;
+    font-size: 16px;
+    font-family: 'microsoft yahei';
+}
+
+/* 修改兴趣文字样式设置 */
+.goods p {
+    float: right;
+    padding-right: 26px;
+    line-height: 60px;
+    font-size: 14px;
+    font-family: 'microsoft yahei';
+}
+
+.goods p a {
+    color: #00a4ff;
+}
+
+/* 下一个精品推荐 */
+.goods_b {
+    height: 20px;
+    margin-top: 33px;
+    margin-bottom: 34px;
+}
+
+.goods_b h4 {
+    float: left;
+    color: #494949;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'microsoft yahei';
+}
+
+.goods_b p {
+    float: right;
+    padding-right: 31px;
+    padding-top: 9px;
+    font-size: 12px;
+}
+
+.goods_b p a {
+    color: #a5a5a5;
+}
+
+.prod .course {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 228px;
+    height: 270px;
+    background-color: #ffffff;
+}
+
+.prod img {
+    width: 228px;
+    height: 155px;
+}
+
+
+.prod h4 {
+    width: 184px;
+    height: 38px;
+    margin-top: 17px;
+    padding-left: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'microsoft yahei';
+}
+
+.prod h4 a {
+    color: #050505;
+}
+
+.prod .gaoji {
+    float: left;
+    margin-top: 14px;
+    padding-left: 23px;
+    color: #ff7c2d;
+    font-size: 12px;
+    font-family: 'microsoft yahei';
+}
+
+.prod span {
+    float: left;
+    margin-top: 14px;
+    padding: 0 8px;
+    color: #999999;
+    font-size: 12px;
+}
+
+.prod .course .count {
+    margin-top: 14px;
+    color: #999999;
+    font-size: 12px;
+    font-family: 'microsoft yahei';
+
+}
+
+.prod .course:hover {
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, .3);
+}
+
+/* 课程导航样式设置 */
+.kcnav {
+    float: left;
+    width: 183px;
+    height: 425px;
+    margin-top: 245px;
+    margin-left: 143px;
+    background-color: #ffffff;
+}
+
+.kcnav li {
+    height: 36px;
+    text-indent: 25px;
+    line-height: 36px;
+}
+
+.kcnav li a {
+    color: #000000;
+    font-size: 14px;
+    font-family: 'microsoft yahei';
+}
+
+.kcnav li a:hover {
+    color: #00a4ff;
+}
+
+#rumeng {
+    float: left;
+    margin-left: 26px;
+}
+
+/* 编程分类模块 */
+.fenlei {
+    height: 20px;
+    margin-top: 18px;
+    margin-bottom: 25px;
+}
+
+.fenlei h4 {
+    float: left;
+    color: #494949;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'microsoft yahei';
+}
+
+.fenlei .nav {
+    float: left;
+    width: 1041px;
+    text-align: center;
+}
+
+.fenlei p {
+    float: right;
+    padding-right: 31px;
+    padding-top: 9px;
+    font-size: 12px;
+    font-family: 'microsoft yahei';
+}
+
+.fenlei .nav li {
+    display: inline-block;
+    padding-top: 4px;
+    padding: 4px 35px 0;
+    font-size: 16px;
+    font-family: 'microsoft yahei';
+}
+
+.fenlei .nav li a {
+    color: #868686;
+}
+
+.fenlei .nav li a:hover {
+    color: #00a4ff;
+}
+
+.fenlei p a {
+    color: #a5a5a5;
+}
+
+.prod2 .left {
+    float: left;
+    margin-right: 15px;
+}
+
+.prod2 .left img,
+.prod2 .top img {
+    float: left;
+}
+
+.prod2 .top {
+    float: left;
+    margin-bottom: 18px;
+}
+
+.fenlei .shuju_nav {
+    width: 1021px;
+}
+
+.fenlei .jiqi_nav {
+    width: 981px;
+}
+
+.footer {
+    /* float: left; */
+    height: 417px;
+    width: 100%;
+    margin-top: 25px;
+    background-color: #ffffff;
+}
+
+.footer .left {
+    float: left;
+    margin-top: 33px;
+    margin-left: 379px;
+}
+
+.footer .left p {
+    margin-top: 17px;
+    color: #666666;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: 'SimSun';
+}
+
+.footer .left .app {
+    display: inline-block;
+    width: 118px;
+    height: 34px;
+    margin-top: 12px;
+    color: #00a4ff;
+    font-size: 16px;
+    line-height: 34px;
+    text-indent: 26px;
+    border: 1px solid #00a4ff;
+    font-family: 'microsoft yahei';
+}
+
+.footer .right {
+    float: right;
+    margin-top: 35px;
+    margin-right: 390px;
+}
+
+.footer dl {
+    float: left;
+}
+
+.footer .right .guanyu {
+    margin-right: 146px;
+}
+
+.footer .right .zhinan {
+    margin-right: 121px;
+}
+
+.footer .right dt {
+    margin-bottom: 4px;
+}
+
+.footer .right a {
+    color: #333333;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: 'SimSun';
+}
+
+.footer .right dd {
+    padding-left: 2px;
+}
