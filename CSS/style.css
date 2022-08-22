@@ -460,7 +460,8 @@ input::-webkit-input-placeholder {
     width: 183px;
     height: 425px;
     top: 912px;
-    left: 143px;
+    right: 50%;
+    margin-right: 626px;
     background-color: #ffffff;
 }
 
